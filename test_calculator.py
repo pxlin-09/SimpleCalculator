@@ -1,6 +1,7 @@
 from add import add
 from div import div
 from mut import mut
+from power import power
 from sub import sub
 
 
@@ -22,3 +23,7 @@ def test_div():
 
 def test_div_by_zero_returns_none():
     assert div(10, 0) is None
+
+
+def test_power():
+    assert power(2, 3) == 8
