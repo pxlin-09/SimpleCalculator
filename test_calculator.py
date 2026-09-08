@@ -27,3 +27,11 @@ def test_div_by_zero_returns_none():
 
 def test_power():
     assert power(2, 3) == 8
+
+
+def test_power_with_zero_exponent():
+    assert power(7, 0) == 1
+
+
+def test_power_with_negative_exponent():
+    assert power(2, -2) == 0.25
